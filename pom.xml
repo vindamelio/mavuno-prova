@@ -15,6 +15,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/x
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
+         
+          <archive>
+          	<manifestFile>src/main/resources/META-INF/MANIFEST.MF </manifestFile>
+          	<manifest>
+            	<addClasspath>true</addClasspath>
+            	 <!--<classpathPrefix>/</classpathPrefix>-->
+            	<!--<mainClass>HelloWorld</mainClass> -->
+          	</manifest>
+          </archive>
+          
         </configuration>
       </plugin>
     </plugins>
